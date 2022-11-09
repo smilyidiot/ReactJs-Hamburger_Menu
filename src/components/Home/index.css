@@ -1,0 +1,24 @@
+/* Write your CSS here */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+}
+
+.home-img {
+  height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-img {
+    display: none;
+  }
+  .home-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-img.png');
+    height: 100vh;
+    background-size: cover;
+  }
+}
